@@ -49,17 +49,15 @@ window.setImmediate = (function () {
 
     maxColumn,       // If horizontal, all but the rightmost column
     maxRow,          // If vertical, all but the bottom row
-    maxX,
 
     bitmap,          // ImageData object
     bitmapData;      // R's, G's, B's and A's for every X and Y
 
-
   // Change the color of a pixel in a bitmap with alpha blending
   function setPixel(index, r, g, b) {
     var orgR = bitmapData[index],
-    orgG = bitmapData[index + 1],
-    orgB = bitmapData[index + 2];
+      orgG = bitmapData[index + 1],
+      orgB = bitmapData[index + 2];
 
     // Linear interpolation with a
     bitmapData[index]     = orgR + a * (r - orgR);
