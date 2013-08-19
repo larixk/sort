@@ -1,0 +1,90 @@
+@font-face {
+	font-family: 'FoundryGridnikLight';
+	src:	url('http://larixk.nl/css/foundrygridnik-light-webfont.eot');
+	src:	url('http://larixk.nl/css/foundrygridnik-light-webfont.eot?#iefix')				 format('embedded-opentype'),
+			url('http://larixk.nl/css/foundrygridnik-light-webfont.woff')					 format('woff'),
+			url('http://larixk.nl/css/foundrygridnik-light-webfont.ttf')					 format('truetype'),
+			url('http://larixk.nl/css/foundrygridnik-light-webfont.svg#FoundryGridnikLight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+html,body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	font: 16px FoundryGridnikLight, monospace;
+	overflow: auto;
+}
+html {
+	background-color: #fff;
+	background-image:
+		linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
+		linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
+		linear-gradient(22deg, #fff 0%, #ddd 40%,  #fff 80%, #fff 90%);
+	background-size:
+		2px 2px,
+		2px 2px,
+		100% 100%;
+	background-position:
+		0 0,
+		1px 1px,
+		0 0;
+}
+.photo {
+	padding: 40px 20px;
+	display: block;
+}
+canvas {
+	border: 20px solid #fafafa;
+	box-shadow:
+		0 0 60px rgba(0,0,0,0.05),
+		0 10px 30px rgba(0,0,0,0.05);
+	z-index: 10;
+	cursor:pointer;
+	transition: box-shadow 1s;
+	display: block;
+	margin: 0 auto;
+}
+canvas:hover {
+	transition: box-shadow 0.25s;
+	box-shadow:
+		0 0px 15px rgba(0,0,0,0.1),
+		0 0px 7px rgba(0,0,0,0.1);
+}
+h1, h1 a, p, p a {
+	color: #bbb;
+	font-weight: normal;
+	transition: color 0.5s;
+}
+h1 {
+	text-transform: uppercase;
+	margin: 16px 16px 0;
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+p {
+	margin: 8px 16px 0;
+	font-size: 24px;
+}
+a {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.intro {
+	padding: 2% 2%;
+}
+.intro:hover p,
+.intro:hover h1 {
+	color: #666;
+}
+.intro:hover a {
+	color: #333;;
+}
+.intro a:hover {
+	color: #ddd;
+}
+.license {
+	font-size: 16px;
+	color: #ddd;
+}
