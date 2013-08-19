@@ -30,7 +30,7 @@ window.setImmediate = (function () {
 (function ($, container) {
   'use strict';
 
-  var src = 'test.jpg',
+  var src = 'img/test.jpg',
 
     width,           // Canvas width
     rowWidth,        // Length of a row of pixels in the bitmap data
