@@ -16,8 +16,28 @@ html,body {
 	font: 16px FoundryGridnikLight, monospace;
 	overflow: auto;
 }
+body {
+	padding: 20px;
+	box-sizing: border-box;
+}
 html {
 	background-color: #fff;
+	background-image:
+		-moz-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
+		-moz-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
+		-moz-linear-gradient(22deg, #fff 0%, #ddd 40%,  #fff 80%, #fff 90%);
+	background-image:
+		-webkit-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
+		-webkit-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
+		-webkit-linear-gradient(22deg, #fff 0%, #ddd 40%,  #fff 80%, #fff 90%);
+	background-image:
+		-o-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
+		-o-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
+		-o-linear-gradient(22deg, #fff 0%, #ddd 40%,  #fff 80%, #fff 90%);
+	background-image:
+		-ms-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
+		-ms-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
+		-ms-linear-gradient(22deg, #fff 0%, #ddd 40%,  #fff 80%, #fff 90%);
 	background-image:
 		linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
 		linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
@@ -36,7 +56,7 @@ html {
 	display: block;
 }
 canvas {
-	border: 20px solid #fafafa;
+	border: 16px solid #fafafa;
 	box-shadow:
 		0 0 60px rgba(0,0,0,0.05),
 		0 10px 30px rgba(0,0,0,0.05);
@@ -55,7 +75,7 @@ canvas:hover {
 h1, h1 a, p, p a {
 	color: #bbb;
 	font-weight: normal;
-	transition: color 0.5s;
+	transition: color 0.5s, background 1s;
 	margin: 0;
 	padding: 0;
 }
@@ -75,7 +95,7 @@ p {
 }
 a {
 	text-decoration: none;
-	border-bottom: 1px dashed #ccc;
+	border-bottom: 1px dotted #ccc;
 	cursor: pointer;
 }
 .intro {
@@ -94,4 +114,14 @@ a {
 .license {
 	font-size: 16px;
 	color: #ddd;
+}
+.thumb {
+	display: none;
+}
+.github {
+	transition: all 0.25s;
+	opacity: 0.3;
+}
+.github:hover {
+	opacity: 1;
 }
